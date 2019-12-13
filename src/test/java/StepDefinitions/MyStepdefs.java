@@ -29,16 +29,19 @@ public class MyStepdefs {
 
     @Given("I open a website")
     public void iOpenAWebsite() {
+        System.out.println("Go to the homepage");
         homePage.goToHomepage();
     }
 
     @When("I click on a link")
     public void iClickOnALink() {
+        System.out.println("Click on the mens tab");
         homePage.clickOnMensTab();
     }
 
     @Then("I am on a new webpage")
     public void iAmOnANewWebpage() {
+        System.out.println("I am on the mens page");
         mensHomePage.assertOnMensPage();
     }
 }

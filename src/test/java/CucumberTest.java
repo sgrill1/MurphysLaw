@@ -7,5 +7,5 @@ import org.junit.runner.RunWith;
         tags = "@Foo",
         features = "src/test/resources"
 )
-public class CucumberRunner {
+public class CucumberTest {
 }

@@ -23,9 +23,9 @@ public class MyStepdefs {
     @Before
     public void launchBrowser(){
         ChromeOptions options = new ChromeOptions();
+        options.addArguments("--no-sandbox");
         options.addArguments("start-maximized");
         options.addArguments("enable-automation");
-        options.addArguments("--no-sandbox");
         options.addArguments("--disable-infobars");
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--disable-browser-side-navigation");
